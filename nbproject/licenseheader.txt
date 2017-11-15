@@ -1,0 +1,8 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}Creata de Marius Trifu
+${licensePrefix}Pentru intrebari trifumarius01@gmail.com ${licensePrefix}
+<#if licenseLast??>
+${licenseLast}
+</#if>

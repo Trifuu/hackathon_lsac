@@ -1,0 +1,213 @@
+.users_edit{
+    padding: 2px;
+    min-width: 45px;
+}
+.error_page{
+    width: 100%;
+    height: -webkit-calc(100% - 97px);
+    height: -moz-calc(100% - 97px);
+    height: calc(100% - 97px);
+    background: #2980b9;
+    display: flex;
+    align-items: center;
+}
+.error_page h1{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+}
+.error_page h1 span{
+    font-weight: bold;
+    font-size: 150px;
+}
+.error_page h1 p{
+    color: #fff;
+    font-size: 40px;
+}
+.add_line{
+    display: none;
+}
+.input_change .dataTables_wrapper .dataTables_filter label input{
+    height: 30px;
+    border:1px solid #ccc;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.dim_input_formular{
+    max-width: 250px;
+}
+.margin_elem_formular{
+    margin-left: 20px;
+}
+.obligatoriu{
+    color: red;
+    font-size: 14px;
+}
+#users_table thead th,#users_table{
+    border-bottom: 0;
+}
+#participanti_table thead th,#participanti_table{
+    border-bottom: 0;
+}
+#participanti_table th, #participanti_table td,#users_table td,#users_table th{
+    text-align: center;
+}
+.border_append{
+    border: 1px solid #ddd;
+}
+
+.timer{
+    text-align: center;
+    font-size: 35px;
+    color: #B9E4EF;
+    font-family: got;
+}
+.active { background:#018EBE; }
+
+.div_login{
+    border-radius: 31px 31px 31px 31px;
+    -moz-border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    border: 18px solid #00b3e5;
+}
+.back_style{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    background-color: #333333;
+    color: #37C4EC;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: got;
+}
+.back_home:hover{
+    background-color: #4f4f4f;
+    color: #27ae60;
+}
+/*expand pagina faq*/
+p.accordion {
+    background-color: #4f4f4f;
+    color: #37C4EC;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom:10px;
+    border-radius: 10px;
+}
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+p.accordion.active, p.accordion:hover {
+    background-color: #7a7979;
+}
+/* Unicode character for "plus" sign (+) */
+p.accordion:after {
+    content: '\2795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+/* Unicode character for "minus" sign (-) */
+p.accordion.active:after {
+    content: "\2796";
+}
+/* Style the element that is used for the panel class */
+div.panel {
+    padding: 0 18px;
+    background-color: #7a7979;
+    color: #37C4EC;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    opacity: 0;
+    margin-bottom:10px;
+    border-radius: 10px;
+}
+div.panel.show {
+    opacity: 1;
+    max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+}
+/*expand pagina faq*/
+#validate_formular label{
+    color: black;
+    font-size: 14px;
+}
+.scris_about{
+    text-align: center;
+    font-size: 30px;
+    color: #37C4EC;
+    height: 150px;
+    margin-top: 40px;
+    font-family: got;
+}
+.scris_about2{
+    text-align: center;
+    font-size: 90px;
+    color: #37C4EC;
+    font-family: got;
+    margin-top: -50px;
+}
+@font-face{
+    font-family: got;
+    src: url(got.ttf);
+}
+#buton_register a{
+    z-index: 10;
+    font-family: got;
+    background-color: #37C4EC;
+    color:#4f4f4f;
+}
+#buton_register a:hover,#buton_register a:focus,#buton_register a:active {
+    background-color:#7a7979; 
+    color: #37C4EC;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(font1.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(font2.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+.powered_by_style{
+    font-size: 26px;
+    color:#37C4EC;
+    margin-top: 40px;
+    font-family: Raleway;
+}
+.scris_about_numere{
+    font-size: 25px;
+    margin-top: -45px;
+    margin-bottom: 45px;
+}
+.numere_about{
+    height: 20px;
+}
+.style1 {
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.numere_home{
+    font-size: 45px;
+}
