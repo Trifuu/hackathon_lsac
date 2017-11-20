@@ -20,7 +20,7 @@ defined("autorizare") or die("Nu aveti autorizare");
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8">
         <div style="text-align: left;color:white;border:1px solid #7a7979;border-radius: 5px;padding: 10px;max-height: 210px;overflow-y: scroll;">
-            <h2 style="color: #018EBE;text-align: center;">
+            <h2 style="color: #018EBE;text-align: center;font-family: Raleway;">
                 We are UiPath
             </h2>
             <h3>

@@ -84,6 +84,15 @@ function log_user_login() {
     fclose($file);
 }
 
+function log_click_buton_problema() {
+
+    $user = get_logged_in_user();
+    $file = fopen(_ROOT . "log/problema.txt", "a");
+    fwrite($file, "Data: " . date('d/m/Y h:i:s a', time()) . "\n" .
+            "User: " . $user["nume"] . " " . $user["prenume"] . " " . $user["email"] . " " . $user["categorie"] . "\n");
+    fclose($file);
+}
+
 function create_excel() {
     require_once _ROOT_INCLUDES . "Class/PHPExcel.php";
 
@@ -91,12 +100,12 @@ function create_excel() {
     $excel->setActiveSheetIndex(0)
             ->setCellValue('A1', 'Hello')
             ->setCellValue('B1', 'World');
-    
+
 //    header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 //    header('Content-Disposition: attachment; filename="test.xlsx"');
 //    header('Cache-Control: max-age=0');
     $file = PHPExcel_IOFactory::createWriter($excel, 'Excel5');
 //    var_dump_custom($file);
-$file->save('test.xls');
+    $file->save('test.xls');
 }
 ?>

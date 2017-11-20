@@ -79,7 +79,7 @@ function get_user_type($categorie,$page){
             return 1;
         }
         if($page=="participanti"){
-            return 2;
+            return 1;
         }
     }
     if($categorie=="juriu"){

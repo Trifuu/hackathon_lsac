@@ -5,7 +5,7 @@
 
 $(document).ready(function () {
     // Set the date we're counting down to
-    var countDownDate = new Date("Nov 16, 2017 00:00:00").getTime();
+    var countDownDate = new Date("Nov 25, 2017 10:00:00").getTime();
 
     if (screen.width < 570) {
         $("#componente_mijloc").css({"position": "absolute", "margin-top": "350px", "margin-left": "-15px", "z-index": "2"});

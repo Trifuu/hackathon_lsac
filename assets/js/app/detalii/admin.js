@@ -6,7 +6,7 @@
 $(document).ready(function () {
     $("#lista_select").on("change", function () {
         var id = this.value;
-        if (typeof echipe[id] === 'undefined') {
+        if (typeof echipe[id]["tricou1"] === 'undefined') {
             $("#membru1").text("");
             $("#membru2").text("");
             $("#membru3").text("");

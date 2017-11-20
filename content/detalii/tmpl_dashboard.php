@@ -11,16 +11,12 @@ defined("autorizare") or die("Nu aveti autorizare");
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-left: 30px;margin-top: 30px;text-align: center;">
         <h2><?php echo $echipa["echipa"]; ?></h2>
         <h5>
-            <?php // echo traducere_stare($echipa["stare_echipa"]); ?>
-            Status:În așteptare
+           
+            Status:
+             <?php  //echo traducere_stare($echipa["stare_echipa"])=="Acceptat"? "Acceptat":"Respins"; ?>
+            În așteptare
         </h5>
-        <h3 style="margin-top: 50px;text-align: left;">
-            Problemă propusă: <a target='_blank' href='#' style="pointer-events: none;" class='btn btn-warning btn-sm link_cv'>click</a>
-        </h3>
-        <h3 style="text-align: left;">
-            Timp rămas: <p id="cronometrua" style="display: inline;">48:00:00</p>
-        </h3>
-        <h6 style="text-align: left;">Perioada de rezolvare a problemei: 16 - 17 noiembrie.</h6>
+        
 
         <div style="margin-top: 30px;text-align: left;">
             <div style="max-width: 450px;">

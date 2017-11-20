@@ -184,7 +184,7 @@ function get_echipa($email_capitan){
 function get_nume_echipe(){
     global $db;
     try{
-        $stmt=$db->prepare("select echipa from participanti");
+        $stmt=$db->prepare("select echipa,id from participanti");
         $stmt->execute();
         $nume=$stmt->fetchAll(PDO::FETCH_ASSOC);
     } catch (Exception $ex) {

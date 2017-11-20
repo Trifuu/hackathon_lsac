@@ -13,6 +13,9 @@ defined("autorizare") or die("Nu aveti autorizare");
             <img id="logo_lsac_about" src="<?php echo _SITE_CSS . "img/logo_hack.png"; ?>" style="max-height: 300px;max-width: 300px;">
         </div>
     </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:50px;"></div>
+    
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <div class="scris_about" id="data">
             <?php echo $limba == "en" ? "Date" : "Data"; ?> <br>
@@ -35,6 +38,9 @@ defined("autorizare") or die("Nu aveti autorizare");
         </div>
     </div>
 
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:50px;"></div>
+    
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
         <div class="scris_about2">
             <p class="numere_about" id="participanti">0</p> <br>
@@ -67,10 +73,12 @@ defined("autorizare") or die("Nu aveti autorizare");
             </p>
         </div>
     </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:100px;"></div>
+    <div class="col-lg-1"></div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <img id="img1" src="<?php echo _SITE_CSS . "img/about_poza.jpg"; ?>" style="max-width: 440px;max-height: 230px;margin: auto;">
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left;color:white;margin-top: 10px;">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left;color:white;margin-top: 10px;left: 20px;font-family: Raleway;">
         <h3 style="font-family: got;">
             <?php echo $limba == "en" ? "ABOUT HACKITALL" : "Despre HACKITALL"; ?>
         </h3>
@@ -97,16 +105,14 @@ defined("autorizare") or die("Nu aveti autorizare");
             ?>
         </p>
     </div>
-    <div class="col-lg-2"></div>
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 50px;">
-        <div style="margin-top: 40px" id="buton_register">
-            <a href="<?php getUrl("formular", "dashboard", true) ?>" class="btn btn-success btn-lg" style=""><?php echo $limba == "en" ? "Register" : "Înscrie-te"; ?></a>
-        </div>
-    </div>
+    <div class="col-lg-1"></div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:100px;"></div>
+    <div class="col-lg-1"></div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <img id="img2" src="<?php echo _SITE_CSS . "img/editia_2017.jpg"; ?>" style="max-width: 440px;max-height: 230px;margin: auto;">
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left;color:white;">
+    
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left;color:white;font-family: Raleway;">
         <h3 style="font-family: got;margin-top: 20px;">
             <?php echo $limba == "en" ? "Previous editions" : "Editiile anterioare"; ?>
         </h3>
@@ -127,9 +133,11 @@ defined("autorizare") or die("Nu aveti autorizare");
             ?>
         </p>
     </div>
-    <div class="col-lg-2"></div>
-    <div class="col-lg-2"></div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left;color:white;margin-top: 30px;">
+    <div class="col-lg-1"></div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:100px;"></div>
+    <div class="col-lg-1"></div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="text-align: left;color:white;margin-top: 30px;font-family: Raleway;">
         <p style="margin-top: 60px;">
             <?php
             if ($limba == "en") {
@@ -153,7 +161,9 @@ defined("autorizare") or die("Nu aveti autorizare");
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
         <img id="img3" src="<?php echo _SITE_CSS . "img/editia_2016.jpg"; ?>" style="max-width: 440px;max-height: 230px;margin: auto;">
     </div>
+    <div class="col-lg-1"></div>
 
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:150px;"></div>
 
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 20px;text-align: center;font-size: 38px;color: white;">
         <?php echo $limba=="en"? "Team Organization":"Echipa de organizare"; ?>
