@@ -211,3 +211,10 @@ div.panel.show {
 .numere_home{
     font-size: 45px;
 }
+.numere_cronometru{
+    font-size: 300px;
+    text-align: center;
+}
+.litere_cronometru{
+    font-size: 220px;
+}

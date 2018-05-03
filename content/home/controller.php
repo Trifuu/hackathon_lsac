@@ -27,6 +27,9 @@ switch ($view):
     case "email":
         require_once _ROOT_CONTENT . $page . "/post_send_email.php";
         break;
+    case "cronometru":
+        require_once _ROOT_CONTENT . $page . "/view_cronometru.php";
+        break;
     default:
         header("HTTP/1.0 404 Not Found");
         $title_app_title = "404 - Pagina Inexistenta";

@@ -17,6 +17,7 @@ require_once _ROOT_INCLUDES . "functions.php";
 require_once _ROOT_INCLUDES . "functions_user.php";
 require_once _ROOT_INCLUDES . "functions_participanti.php";
 require_once _ROOT_INCLUDES . "functions_detalii.php";
+require_once _ROOT_INCLUDES . "functions_cerinte.php";
 
 
 

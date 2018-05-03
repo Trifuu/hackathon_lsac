@@ -33,7 +33,7 @@ defined("autorizare") or die("Nu aveti autorizare");
     </head>
     <body style="<?php echo ($page == "home" || $page == "login")? 'background-color:#333333' : "";
         echo ($page == "formular" || $page=="detalii") ? "background-image: url('" . _SITE_CSS . "img/form.png')" : "";?>" >
-        <?php if($page=="home" || $page=="formular")
+        <?php if(($page=="home" || $page=="formular") && $view!="cronometru")
         {
         ?>
         <div class="btn-group btn-group-sm" role="group" style="position:absolute;right: 10px;top: <?php echo $page=="formular"? "10px":"70px"; ?>;z-index: 3">
@@ -41,7 +41,7 @@ defined("autorizare") or die("Nu aveti autorizare");
             <button type="submit" class="btn btn-info" id="limba_en" style="cursor:pointer;">EN</button>
         </div>
         <?php }
-        if ($page != "login" && $page != "formular") {
+        if ($page != "login" && $page != "formular" && $view!="cronometru") {
             require_once _ROOT_CONTENT . "header.php";
         }
         require_once $content;

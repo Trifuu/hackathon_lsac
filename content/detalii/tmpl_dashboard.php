@@ -13,8 +13,7 @@ defined("autorizare") or die("Nu aveti autorizare");
         <h5>
            
             Status:
-             <?php  //echo traducere_stare($echipa["stare_echipa"])=="Acceptat"? "Acceptat":"Respins"; ?>
-            În așteptare
+             <?php  echo traducere_stare($echipa["stare_echipa"])=="Acceptat"? "Acceptat":"Respins"; ?>
         </h5>
         
 

@@ -20,7 +20,7 @@ $content = null;
 
 $js = [];
 $css = [];
-if ($user == null && (page == "users" || $page == "participanti")) {
+if ($user == null && ($page == "users" || $page == "participanti")) {
     $page = "home";
     $view = "dashboard";
 }
@@ -61,14 +61,7 @@ if ($user == null && ($page == "users" || $page == "participanti" || $page == "d
 //} catch (Exception $ex) {
 //    die($ex->getMessage());
 //}
-//global $db;
-//try{
-//    $stmt = $db->prepare("delete from detalii");
-//    $stmt->execute();
-//}
-// catch (Exception $ex){
-//     die($ex->getMessage());
-// }
+
 //update_detalii_echipa(1,"K","S","S","1","1","1","sfd",1,2,2,"sdfs","sdfds");
 //var_dump_custom(get_detalii());
 //$total = get();
@@ -104,6 +97,9 @@ switch ($page):
         break;
     case "detalii":
         require_once _ROOT_CONTENT . "detalii/controller.php";
+        break;
+    case "cerinte":
+        require_once _ROOT_CONTENT . "cerinte/controller.php";
         break;
     default:
         header("HTTP/1.0 404 Not Found");

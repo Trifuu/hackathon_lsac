@@ -5,7 +5,7 @@
 
 $(document).ready(function () {
     // Set the date we're counting down to
-    var countDownDate = new Date("Nov 25, 2017 10:00:00").getTime();
+    var countDownDate = new Date("Nov 26, 2017 11:35:00").getTime();
 
     if (screen.width < 570) {
         $("#componente_mijloc").css({"position": "absolute", "margin-top": "350px", "margin-left": "-15px", "z-index": "2"});
@@ -30,6 +30,8 @@ $(document).ready(function () {
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        hours=hours+days*24;
+        days=0;
         if (days == 0) {
             days = "00";
         } else if (days < 10) {
